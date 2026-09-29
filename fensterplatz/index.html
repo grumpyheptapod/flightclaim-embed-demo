@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sechs Stunden in Palma – Fensterplatz 23A</title>
+  <!--
+    Fictional host page: a travel blog. Shows data-appearance="auto" — the
+    frame takes light/dark, the brand colour (the ochre of the blog's buttons)
+    and the typeface (Literata, from the Google Fonts link below) from the page
+    itself — and a narrow column, where the check stacks into one column.
+    The ochre is too pale for white button text, so the frame darkens it.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
+  <style>
+    :root {
+      --himmel: #EEF3F7;
+      --tinte: #1F2A37;
+      --schiefer: #5D6B7A;
+      --ocker: #E3A72F;
+      --linie: #D3DDE6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--himmel); color: var(--tinte);
+      font-family: Literata, Georgia, serif; font-size: 18px; line-height: 1.7;
+    }
+    a { color: var(--tinte); text-decoration-color: var(--ocker); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--tinte); outline-offset: 2px; }
+
+    .kopf { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .fenster {
+      display: inline-grid; place-items: center; width: 4.2rem; height: 5.2rem;
+      border: 3px solid var(--tinte); border-radius: 1.6rem; font-weight: 700; font-size: 1.35rem;
+      background: linear-gradient(#fff, #fff) padding-box; text-decoration: none;
+    }
+    .blogname { font-size: 0.95rem; color: var(--schiefer); margin-left: 0.9rem; }
+    .marke { display: flex; align-items: center; text-decoration: none; }
+    .abo {
+      font: inherit; font-size: 0.9rem; font-weight: 600; border: 0; border-radius: 999px;
+      padding: 0.55rem 1.1rem; background: var(--ocker); color: var(--tinte); cursor: pointer;
+    }
+
+    article { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.12; margin: 0 0 0.6rem; font-weight: 700; letter-spacing: -0.01em; }
+    .zeile { color: var(--schiefer); font-size: 0.95rem; margin: 0 0 2rem; }
+    article p { margin: 0 0 1.2rem; }
+    article h2 { font-size: 1.35rem; margin: 2.4rem 0 0.7rem; }
+    .check { margin: 1.8rem -0.25rem 2rem; }
+    .fuss { max-width: 44rem; margin: 0 auto; padding: 1.2rem 1.25rem 2.5rem; border-top: 1px solid var(--linie); font-size: 0.85rem; color: var(--schiefer); }
+  </style>
+</head>
+<body>
+  <header class="kopf">
+    <a class="marke" href="#"><span class="fenster">23A</span><span class="blogname">Fensterplatz 23A<br>Notizen vom Reisen</span></a>
+    <button class="abo" type="button">Neue Beiträge per Mail</button>
+  </header>
+
+  <article>
+    <h1>Sechs Stunden in Palma, und was mir danach zustand</h1>
+    <p class="zeile">Von Johanna, 12. September</p>
+
+    <p>Der Rückflug nach Wien sollte um 14:40 gehen. Um 14:10 stand „verspätet“ auf der Tafel, um 16 Uhr gab es einen Essensgutschein über acht Euro, und gelandet sind wir kurz vor Mitternacht. Ich hatte keine Ahnung, dass mir dafür Geld zusteht.</p>
+    <p>Bei mehr als drei Stunden Verspätung am Ziel zahlt die Fluglinie nach der EU-Fluggastrechteverordnung einen festen Betrag, auf der Strecke Palma–Wien, knapp 1.500 Kilometer, sind das 250 Euro. Ein technischer Defekt am Flugzeug gilt dabei nicht als Ausrede.</p>
+
+    <h2>Prüf es gleich selbst</h2>
+    <p>Ich habe meinen Flug hier eingegeben. Es dauert zwei Minuten, und man sieht sofort, ob sich das Weitermachen lohnt.</p>
+
+    <!-- The embed: everything but the partner id is read from this page. -->
+    <div class="check" data-flightclaim data-partner="demo-fensterplatz" data-appearance="auto"></div>
+
+    <p>Was ich beim nächsten Mal anders mache: ein Foto von der Anzeigetafel, sobald „verspätet“ dasteht, und die Uhrzeit der Landung notieren. Die Bordkarte hilft dabei übrigens nicht, auf ihr steht nur die geplante Zeit.</p>
+  </article>
+
+  <footer class="fuss">Fiktive Beispielseite zur Vorführung des eingebetteten Fluggastrechte-Checks. Den Blog und Johanna gibt es nicht.</footer>
+
+  <script src="https://kiwebboost.at/embed.js" async></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einbettung – Vorführseiten</title>
+  <!--
+    Overview of the host pages that embed the claim check. Run the homepage
+    (npm run dev, port 3001), then serve this folder from another port so the
+    frames are genuinely cross-origin:
+      npx serve -l 5500 embed-demo        → http://localhost:5500/
+  -->
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1d2433; background: #fff; line-height: 1.55; }
+    main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; margin: 0 0 0.5rem; }
+    p { margin: 0 0 1.5rem; color: #4a5263; }
+    ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid #e3e7ee; }
+    li { border-bottom: 1px solid #e3e7ee; padding: 1rem 0; }
+    a { font-weight: 600; color: #1d2433; }
+    li span { display: block; color: #4a5263; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Der Fluggastrechte-Check auf fremden Seiten</h1>
+    <p>Erfundene Partnerseiten, die den Check einbetten. Jede zeigt eine andere Art, ihn einzubauen. Keine davon ist ein echtes Unternehmen.</p>
+    <ul>
+      <li><a href="kranichweg/">Reisebüro Kranichweg</a><span>Feste Angaben im Baustein: helles Design, die Markenfarbe des Reisebüros, seine Schrift.</span></li>
+      <li><a href="fensterplatz/">Fensterplatz 23A</a><span>Reiseblog mit schmaler Spalte. Der Check übernimmt Farbe und Schrift automatisch aus der Seite und dunkelt das zu helle Ocker für lesbare Knöpfe ab.</span></li>
+      <li><a href="flugfeldfunk/">Flugfeldfunk</a><span>Dunkle Seite: der Check erkennt das und wechselt in sein dunkles Design.</span></li>
+      <li><a href="ohne-anpassung/">Ohne Anpassung</a><span>Nur die Partnerkennung, keine Angaben zum Aussehen: der Check so, wie ihn jeder Partner zuerst bekommt.</span></li>
+    </ul>
+  </main>
+</body>
+</html>

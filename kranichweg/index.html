@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reisebüro Kranichweg – Graz</title>
+  <!--
+    Fictional host page: a family travel agency. Shows the explicit settings —
+    light theme, the agency's plum as brand colour, its own typeface — set
+    once on the snippet, nothing read from the page.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+  <style>
+    :root {
+      --paper: #F6F7F9;
+      --ink: #1E2230;
+      --ink-soft: #545A6B;
+      --plum: #5B2A6E;
+      --plum-deep: #45204F;
+      --lilac: #EDE6F1;
+      --rule: #DADDE4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: "Bricolage Grotesque", system-ui, sans-serif; font-size: 17px; line-height: 1.55;
+    }
+    a { color: var(--plum); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--plum); outline-offset: 2px; }
+
+    .kopf { border-bottom: 1px solid var(--rule); background: #fff; }
+    .kopf__innen { max-width: 72rem; margin: 0 auto; padding: 0.9rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .marke { display: flex; align-items: center; gap: 0.6rem; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+    .marke svg { width: 34px; height: 34px; }
+    .kontakt { font-size: 0.95rem; color: var(--ink-soft); }
+    .kontakt strong { color: var(--ink); font-weight: 600; }
+
+    .band { background: var(--plum); color: #fff; position: relative; overflow: hidden; }
+    .band__innen { max-width: 72rem; margin: 0 auto; padding: 4.5rem 1.25rem 5rem; position: relative; z-index: 1; }
+    .band h1 { font-size: clamp(2.2rem, 5.5vw, 4rem); line-height: 1.02; letter-spacing: -0.025em; font-weight: 800; margin: 0 0 1.1rem; max-width: 15ch; }
+    .band p { font-size: 1.15rem; max-width: 46ch; margin: 0; color: #E9DEEE; }
+    .flugbahn { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .flugbahn path { fill: none; stroke: #C9A8D6; stroke-width: 2; stroke-dasharray: 2 10; stroke-linecap: round; }
+
+    .inhalt { max-width: 72rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; display: grid; gap: 2.5rem; }
+    .einleitung { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+    .einleitung h2 { font-size: 1.7rem; letter-spacing: -0.015em; line-height: 1.15; margin: 0 0 0.5rem; }
+    .einleitung p { margin: 0; color: var(--ink-soft); max-width: 60ch; }
+    .buero { background: var(--lilac); border-radius: 14px; padding: 1.2rem 1.4rem; font-size: 0.97rem; }
+    .buero h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+    .buero p { color: var(--ink); }
+
+    .fuss { border-top: 1px solid var(--rule); color: var(--ink-soft); font-size: 0.88rem; }
+    .fuss__innen { max-width: 72rem; margin: 0 auto; padding: 1.4rem 1.25rem 2rem; }
+  </style>
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf__innen">
+      <a class="marke" href="#">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#5B2A6E"/><path d="M8 24 C14 18, 20 16, 31 15 M22 15.5 L27 9 M22 15.5 L25 22" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+        Reisebüro Kranichweg
+      </a>
+      <p class="kontakt">Annenstraße 14, Graz<br><strong>Montag bis Freitag, 9 bis 18 Uhr</strong></p>
+    </div>
+  </header>
+
+  <section class="band">
+    <svg class="flugbahn" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M780 340 C 860 250, 900 120, 1010 110 S 1160 60, 1240 20"/>
+    </svg>
+    <div class="band__innen">
+      <h1>Ihr Flug kam zu spät an? Das holen wir mit Ihnen nach.</h1>
+      <p>Wir haben Ihre Reise gebucht, also kümmern wir uns auch, wenn der Flug nicht so lief wie geplant. Prüfen Sie hier in zwei Minuten, ob Ihnen eine Entschädigung zusteht.</p>
+    </div>
+  </section>
+
+  <main class="inhalt">
+    <div class="einleitung">
+      <div>
+        <h2>Bis zu 600 € pro Person</h2>
+        <p>Bei mehr als drei Stunden Verspätung, einer Annullierung oder wenn Sie nicht an Bord durften, steht Ihnen nach EU-Recht oft eine Ausgleichszahlung zu – unabhängig vom Ticketpreis.</p>
+      </div>
+      <div class="buero">
+        <h3>Lieber persönlich?</h3>
+        <p>Kommen Sie mit Ihrer Buchungsbestätigung bei uns in der Annenstraße vorbei. Wir füllen den Check gemeinsam mit Ihnen aus.</p>
+      </div>
+    </div>
+
+    <!-- The embed: explicit look, no guessing. -->
+    <div data-flightclaim
+         data-partner="demo-kranichweg"
+         data-theme="light"
+         data-brand="#5B2A6E"
+         data-font="Bricolage Grotesque"
+         data-font-url="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap"></div>
+  </main>
+
+  <footer class="fuss">
+    <div class="fuss__innen">Fiktive Beispielseite zur Vorführung des eingebetteten Fluggastrechte-Checks. Das Reisebüro Kranichweg gibt es nicht.</div>
+  </footer>
+
+  <script src="https://kiwebboost.at/embed.js" async></script>
+</body>
+</html>

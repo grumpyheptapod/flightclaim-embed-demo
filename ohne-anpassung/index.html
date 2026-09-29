@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einbettung – ohne Anpassung</title>
+  <!--
+    The snippet with nothing but a partner id: no data-appearance, no theme,
+    no brand, no font. What a partner gets before configuring anything — our
+    own green and font, on a light page. (All the other demos except next-host
+    are static HTML too; what sets this one apart is the missing settings.)
+
+    Serve it from a port other than the Next app, so the frame really is
+    cross-origin, with any static server:  npx serve -l 5500 embed-demo
+    and open http://localhost:5500/ohne-anpassung/ while `npm run dev` runs on 3001.
+    The dev server allows any localhost port to frame /embed/ (src/proxy.ts).
+  -->
+  <style>
+    body { margin: 0; font-family: Georgia, serif; background: #f4f1ea; color: #222; }
+    header { background: #2b3a55; color: #fff; padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 1; }
+    main { max-width: 60rem; margin: 0 auto; padding: 1.5rem; }
+    .spacer { height: 40vh; border: 1px dashed #bbb; display: grid; place-items: center; color: #888; }
+  </style>
+</head>
+<body>
+  <header><strong>Irgendeine Reiseseite</strong> – Baustein ohne Angaben zum Aussehen</header>
+  <main>
+    <h1>Flug verspätet?</h1>
+    <p>Text der Partnerseite über dem eingebetteten Check.</p>
+
+    <div data-flightclaim data-partner="demo-schlicht" data-flightclaim-offset="72"></div>
+
+    <div class="spacer">Inhalt der Partnerseite unter dem Check</div>
+  </main>
+  <script src="https://kiwebboost.at/embed.js" async></script>
+</body>
+</html>
