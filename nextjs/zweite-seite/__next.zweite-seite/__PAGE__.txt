@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[8454,["/flightclaim-embed-demo/nextjs/_next/static/chunks/3rdqn8rx95pw7.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/14mrh2-p_w84d.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/3aho67g18rc7l.js"],"default"]
+3:I[97367,["/flightclaim-embed-demo/nextjs/_next/static/chunks/3rdqn8rx95pw7.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","h1",null,{"children":"Zweite Seite"}],["$","p",null,{"children":["Hierher kommt man über die Navigation, ohne dass der Browser neu lädt. ",["$","code",null,{"children":"embed.js"}]," ist dann schon geladen und läuft nicht noch einmal; die Komponente bittet es, das neue Element einzubinden."]}],["$","$L2",null,{"partner":"demo-nextjs","appearance":"auto"}]]}],[["$","script","script-0",{"src":"/flightclaim-embed-demo/nextjs/_next/static/chunks/3aho67g18rc7l.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"lE2-oAUTxgOyjL-7GLdkC"}
+5:null

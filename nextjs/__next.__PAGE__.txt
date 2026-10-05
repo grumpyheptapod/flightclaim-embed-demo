@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[8454,["/flightclaim-embed-demo/nextjs/_next/static/chunks/3rdqn8rx95pw7.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/14mrh2-p_w84d.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/3aho67g18rc7l.js"],"default"]
+3:I[97367,["/flightclaim-embed-demo/nextjs/_next/static/chunks/3rdqn8rx95pw7.js","/flightclaim-embed-demo/nextjs/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","h1",null,{"children":"Der Check in einer Next.js-Seite"}],["$","p",null,{"children":["Eine eigene Next.js-Anwendung, die den Check über ",["$","code",null,{"children":"FlightclaimEmbed"}]," einbindet: das Element mit den ",["$","code",null,{"children":"data-"}],"-Angaben und ",["$","code",null,{"children":"embed.js"}]," über ",["$","code",null,{"children":"next/script"}],". Die zweite Seite zeigt, dass es auch nach einem Seitenwechsel ohne Neuladen erscheint."]}],["$","$L2",null,{"partner":"demo-nextjs","theme":"light","brand":"#C2410C"}]]}],[["$","script","script-0",{"src":"/flightclaim-embed-demo/nextjs/_next/static/chunks/3aho67g18rc7l.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"lE2-oAUTxgOyjL-7GLdkC"}
+5:null
